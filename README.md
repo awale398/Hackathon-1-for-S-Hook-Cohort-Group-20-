@@ -105,20 +105,39 @@ Copy code:
 
                           
 # 7. Create a Pull Request (PR)
-When your project is complete or you need feedback, create a pull request to merge your branch into the main branch.
+When your project is complete or you need feedback, create a pull request to merge your branch into the main branch:
+
 
 Steps to Create a PR:(Pull Request)
+
+
 Go to the repository on GitHub.
+
+
 Click on the Pull Requests tab.
+
+
 Select New Pull Request.
+
+
 Choose your branch (feature/your-name-project) as the source branch and main as the target branch.
+
+
 Add a meaningful title and description to your PR.
+
+
 Submit the pull request.
+
+
 # 8. Review and Feedback
-Wait for a code review from your peer group or the group leader before merging your PR into the main branch.
+Wait for a code review from your peer group or the group leader before merging your PR into the main branch:
 
 Address any requested changes before merging.
+
+
 Ensure there are no unresolved conflicts in your PR.
+
+
 # 9. Update Your Folder README.md
 Each member should include the following information in their project folder's README.md file:
 
@@ -153,8 +172,14 @@ Once your project has been reviewed and merged, share your project folder link w
 
 # 11. General Rules
 Stay in Your Folder: Do not edit or delete files from other folders.
+
+
 Follow Naming Conventions: Stick to your assigned folder and branch names.
+
+
 Communicate Issues: Use GitHub Issues for questions or troubleshooting.
+
+
 By following these steps, we ensure smooth collaboration and avoid conflicts. Happy coding! 🎉
 
 
