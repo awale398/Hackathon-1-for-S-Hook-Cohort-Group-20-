@@ -8,12 +8,22 @@ Before starting, clone the repository to your local machine:
 
 bash:
 Copy code:
+
+
                            git clone https://github.com/your-repo-url.git
+
+                           
 Navigate into the repository:
 
 bash:
+
+
 Copy code:
+
+
                            cd your-repo-name
+
+                           
 # 2. Create Your Personal Branch
 Always work on your own branch to avoid interfering with others. Create a branch with the following format:
 feature/your-name-project
@@ -21,13 +31,25 @@ feature/your-name-project
 Example:
 
 bash:
+
+
 Copy code: 
+
+
                             git checkout -b feature/john-portfolio
+
+                            
 Push your new branch to the remote repository:
 
 bash:
+
+
 Copy code:
+
+
                              git push -u origin feature/john-portfolio
+
+                             
 # 3. Work Within Your Assigned Folder
 Each team member has a designated folder for their project. Locate your folder and only make changes inside it:
 
@@ -45,23 +67,43 @@ Make frequent commits to save your progress. Use descriptive commit messages to 
 Example:
 
 bash:
+
+
 Copy code:
+
+
                             git add .
+
+                            
                             git commit -m "Added my portfolio"
+
+                            
 # 5. Pull Updates from the Main Branch
 To keep your branch up to date with the latest changes in the repository, regularly pull updates from the main branch.
 
 bash:
+
+
 Copy code:
+
+
                            git pull origin main
+
+                           
 Resolve any merge conflicts that might arise, if necessary.
 
 # 6. Push Your Changes
 Once you’ve committed your changes, push them to your personal branch:
 
 bash:
+
+
 Copy code:
+
+
                           git push origin feature/your-name-project
+
+                          
 # 7. Create a Pull Request (PR)
 When your project is complete or you need feedback, create a pull request to merge your branch into the main branch.
 
