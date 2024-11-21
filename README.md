@@ -8,12 +8,12 @@ Before starting, clone the repository to your local machine:
 
 bash
 Copy code
-          git clone https://github.com/your-repo-url.git
+          . git clone https://github.com/your-repo-url.git
 Navigate into the repository:
 
 bash
 Copy code
-          cd your-repo-name
+          . cd your-repo-name
 # 2. Create Your Personal Branch
 Always work on your own branch to avoid interfering with others. Create a branch with the following format:
 feature/your-name-project
@@ -22,7 +22,7 @@ Example:
 
 bash
 Copy code
-          git checkout -b feature/john-portfolio
+          . git checkout -b feature/john-portfolio
 Push your new branch to the remote repository:
 
 bash
@@ -31,11 +31,11 @@ Copy code
 # 3. Work Within Your Assigned Folder
 Each team member has a designated folder for their project. Locate your folder and only make changes inside it:
 
- Copy code
- root/
-├── john-portfolio/
-├── jane-portfolio/
-└── other-folders/
+          Copy code
+          root/
+          ├── john-portfolio/
+          ├── jane-portfolio/
+          └── other-folders/
 Add Your Project Files:
 Place all your files (HTML, CSS, JavaScript, assets, etc.) inside your folder.
 Do not edit or modify files in folders assigned to other members.
@@ -46,14 +46,14 @@ Example:
 
 bash
 Copy code
-           git add .
-           git commit -m "Added my portfolio"
+           . git add .
+           . git commit -m "Added my portfolio"
 # 5. Pull Updates from the Main Branch
 To keep your branch up to date with the latest changes in the repository, regularly pull updates from the main branch.
 
 bash
 Copy code
-         git pull origin main
+         . git pull origin main
 Resolve any merge conflicts that might arise, if necessary.
 
 # 6. Push Your Changes
@@ -61,7 +61,7 @@ Once you’ve committed your changes, push them to your personal branch:
 
 bash
 Copy code
-          git push origin feature/your-name-project
+          . git push origin feature/your-name-project
 # 7. Create a Pull Request (PR)
 When your project is complete or you need feedback, create a pull request to merge your branch into the main branch.
 
