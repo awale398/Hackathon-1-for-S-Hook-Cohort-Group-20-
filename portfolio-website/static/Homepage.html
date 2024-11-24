@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-wid th, initial-scale=1.0">
+  <title>Welcome Page</title>
+  <style>
+    /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background:radial-gradient(circle at center, #d4abbc,#3f51b5, #6a1b9a);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    overflow: hidden;
+  }
+  
+  /* Navbar */
+  .navbar {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+  }
+  
+  .navbar li {
+    font-size: 18px;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+ .welcome-section {
+    text-align: center;
+  }
+  
+  .welcome-text {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+    animation: fadeIn 2s ease-out;
+  }
+  
+  .cta-button {
+    background: #6e4386;
+    color: #fff;
+    border: none;
+    padding: 15px 40px;
+    font-size: 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .cta-button:hover {
+    background: #2d0138;
+    transform: scale(1.1);
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  </style>
+</head>
+<body>
+  <div class="container">
+    
+    <div class="welcome-section"> 
+      <h1 class="welcome-text">Welcome To My Portfolio!</h1>
+      <button class="cta-button" onclick="location.href='Homepage2.html'">Explore now</button>
+    </div>
+  </div>
+  <script>
+  function enterSite() {
+    document.body.style.overflow = 'auto';
+    document.querySelector('.intro').style.display = 'none';
+}
+  </script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+    <style>
+     /* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+   
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Light gray background */
+    color: #333;
+    padding-top: 60px; /* To prevent content from being hidden behind fixed header */
+    animation: fadeIn 1s forwards; /* Page fade-in animation */
+}
+
+/* Header Styles */
+header {
+    background-color: #6a1b9a; /* Purple header */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    animation: slideDown 0.8s ease-out forwards; /* Slide down animation */
+}
+
+h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+/* Main Section Styles */
+main {
+    padding: 40px 20px;
+    margin-top: 100px; /* To ensure content is not hidden behind header */
+    text-align: center;
+    background-color: white;
+    border-radius: 8px;
+    opacity: 0;
+    animation: fadeInMain 1s forwards 0.5s; /* Fade-in effect for main content */
+}
+
+/* Section Styles */
+section {
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #3f51b5; /* Blue color for section headings */
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+}
+/* Download Button Styling */
+.download-btn {
+    display: inline-block;
+    background-color: #6a1b9a; /* Purple background */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for download button */
+.download-btn:hover {
+    background-color: #512da8; /* Darker purple on hover */
+}
+
+
+/* Animations */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInMain {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    main {
+        padding: 20px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Education</h1>
+    </header>
+
+    <main>
+        <section id="Education">
+            <p>
+                <ul>
+            <li>Institute - Meru university of Science and technology</li>
+            <li>Course - B.sc Computer Science</li>
+            <li>Degree - Undergraduate</li>
+            <li>From september 2023</li>
+                </ul>
+            </p><br><br><br>
+            <p>
+                <ul>
+             <li>Institute - St.Bakhita High School</li>
+             <li>From 2018 - 2022</li>
+            </ul>
+            </p><br><br><br>
+            <section id="cv-download">
+                <p>If you'd like to learn more about my experience, please feel free to download my CV.</p>
+                <!-- Download link -->
+                <a href="https://drive.google.com/file/d/1yJVwnKrUO7VQDeF9kB_WEV1Zjpz7fkT1/view?usp=drivesdk" download class="download-btn">Download CV</a>
+            </section>
+        </section>
+    </main>
+</body>
+</html>

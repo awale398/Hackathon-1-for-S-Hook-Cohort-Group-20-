@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; 
+        }
+
+        /* Body Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0; /* Light gray background for the body */
+            color: #333;
+            margin-top: 60px; /* To avoid header overlapping content */
+            opacity: 0; /* Initially hidden for fade-in effect */
+            animation: fadeIn 1s forwards; /* Fade-in effect on page load */
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #6a1b9a; /* Purple header */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            animation: slideDown 0.8s ease-out forwards; /* Slide down effect */
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        /* Navigation Styles */
+        nav {
+            position: static;
+            top: 250px; /* Starts below the main section */
+            left: 10px; /* Adjust left position to add some margin */
+            width: 100%; /* Set the width of the vertical nav */
+            background-color: #3f51b5; /* Blue background for the nav */
+            padding: 20px;
+            z-index: 999;
+            border-radius: 8px;
+            animation: slideIn 0.8s ease-out forwards; /* Slide-in effect */
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 15px 0; /* Vertical spacing between each nav link */
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            text-transform: uppercase;
+            text-align: center;
+            padding: 10px;
+            display: block;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            border-radius: 4px;
+        }
+
+        /* Hover effect on navigation links */
+        nav ul li a:hover {
+            background-color: #8c64eb;
+            color: #fff;
+        }
+
+        /* Main Section Styles */
+        main {
+            padding: 20px 10px;
+            margin-left: 10px; 
+            text-align: center;
+            background-color: rgb(232, 226, 236);
+            border-radius: 8px;
+            opacity: 0; /* Initially hidden for fade-in effect */
+            animation: fadeInMain 1s forwards 0.5s; /* Fade-in effect with delay */
+        }
+
+        section {
+            margin-top: 20px;
+        }
+
+        h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #3f51b5; /* Blue color for section headers */
+            opacity: 0;
+            animation: fadeInSection 1s forwards; /* Section fade-in */
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        main {
+            margin-top: 50px; /* To ensure content is not hidden behind the header */
+        }
+
+        /* Scroll Animations */
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInMain {
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInSection {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Responsive Styles */
+        @media screen and (max-width: 768px) {
+            nav {
+                width: 100%;
+                left: 0;
+                top: 0;
+                padding: 10px;
+            }
+
+            nav ul {
+                display: flex;
+                justify-content: space-around;
+            }
+
+            main {
+                margin-left: 0;
+            }
+
+            h2 {
+                font-size: 28px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="about.html" class="nav-btn">About</a></li>
+            <li><a href="interests.html" class="nav-btn">Interests</a></li>
+            <li><a href="projects.html" class="nav-btn">Projects</a></li>
+            <li><a href="education.html" class="nav-btn">Education</a></li>
+            <li><a href="skills.html" class="nav-btn">Skills</a></li>
+            <li><a href="contact.html" class="nav-btn">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>let us explore about me together</h2>
+           
+        </section>
+    </main>
+</body>
+</html>
