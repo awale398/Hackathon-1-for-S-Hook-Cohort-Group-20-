@@ -1,0 +1,345 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Main Layout */
+html, body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #0a192f;
+    color: #ccd6f6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #0a192f;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #64ffda;
+    margin-bottom: 0.5rem;
+}
+
+header nav a {
+    color: #64ffda;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #ffffff;
+}
+
+/* Main Content */
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex: 1; /* Takes up remaining space between header and footer */
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 0.7rem 1.5rem;
+    color: #0a192f;
+    background-color: #64ffda;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+.btn:hover {
+    background-color: #52e0b5;
+}
+
+/* CV Download Button */
+.btn_CV {
+    position: fixed; /* Fixed position for consistent placement */
+    bottom: 20px;    /* Distance from bottom */
+    right: 20px;     /* Distance from right */
+    display: inline-block;
+    padding: 0.7rem 1.5rem;
+    color: #ffffff;
+    background-color: #0073e6;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none; /* Remove underline for anchor */
+}
+
+.btn_CV:hover {
+    background-color: #005bb5; /* Hover effect for CV button */
+}
+
+
+/* Project Layout */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.projects article {
+    background-color: #112240;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.projects img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+}
+
+/* Certificates Layout */
+.certificates {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+}
+
+.certificates img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+/* Contact Form */
+form label {
+    color: #64ffda;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 0.7rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #112240;
+    color: #ccd6f6;
+}
+
+form button {
+    display: inline-block;
+    padding: 0.7rem 1.5rem;
+    color: #0a192f;
+    background-color: #64ffda;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #52e0b5;
+}
+
+
+.flash-message.success {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.flash-message.danger {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.flash-message.info {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+
+/* About Page-Specific Styles */
+
+/* Section Titles */
+section h2 {
+    color: #64ffda;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #64ffda;
+    padding-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+/* About Section */
+.about-section {
+    background-color: #112240;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.about-section p {
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+/* Interests Section */
+.interests-section {
+    margin-bottom: 2rem;
+}
+
+.interests-section p {
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+/* Education Section */
+.education-section ul {
+    list-style-type: square;
+    padding-left: 1.5rem;
+}
+
+.education-section li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #ccd6f6;
+}
+
+/* Skills Section */
+.skills-section {
+    margin-bottom: 2rem;
+}
+
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills-list li {
+    background-color: #112240;
+    padding: 0.7rem 1rem;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    font-size: 1rem;
+}
+
+/* Experience Section */
+.experience-section ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+.experience-section li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #ccd6f6;
+}
+
+/* Section Layout */
+section {
+    margin-bottom: 3rem;
+}
+
+/* General Section Content */
+section p,
+section ul {
+    margin: 1rem 0;
+}
+
+/* Footer */
+footer {
+    margin-top: 3rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    .skills-list {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+
+
+
+/* Paragraphs */
+.profile-paragraph {
+    text-align: justify; /* Justifies the text */
+    line-height: 1.8;   /* Adjusts the line spacing for readability */
+    margin: 20px auto;  /* Centers the block with some margin */
+    max-width: 800px;   /* Optional: Restricts width for cleaner layout */
+}
+
+.profile-paragraph p {
+    text-align: justify; /* Ensures paragraphs are justified */
+    margin: 10px 0;      /* Adds spacing between paragraphs */
+}
+
+.profile-paragraph p span {
+    display: inline;     /* Ensures the first sentence flows inline */
+    font-weight: bold;   /* Optional: Highlights the first sentence */
+}
+
+
+/* Footer */
+footer {
+    background-color: #0a192f;
+    text-align: center;
+    padding: 1rem;
+    color: #64ffda;
+    margin-top: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+    }
+}
