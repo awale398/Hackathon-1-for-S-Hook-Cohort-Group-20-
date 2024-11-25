@@ -89,16 +89,19 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 15rem;
+  gap: 3remrem;
+  flex-wrap: wrap;
 }
 
 .home-content {
   display: flex;
   flex-direction: column;
-  align-items: baseline;
+  align-items: flex-start;
   text-align: left;
   justify-content: center;
   margin-top: 3rem;
+  max-width: 600px;
+  padding-right: 2rem;
 }
 
 span {
@@ -242,6 +245,7 @@ img {
   font-size: 34px;
   font-weight: 600;
   min-width: 280px;
+  margin-bottom: 1rem;
 }
 
 .text-animation span {
