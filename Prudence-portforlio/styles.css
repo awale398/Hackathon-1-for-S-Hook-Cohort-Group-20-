@@ -1,0 +1,385 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.container1 {
+  width: 80%;
+  margin: auto;
+  display: flex; /* Add flexbox for layout */
+  align-items: center; /* Vertically center the items */
+  justify-content: space-between; /* Push logo to left and nav to right */
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+header .logo a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Use flexbox to arrange the items horizontally */
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0; /* Remove margin from the last item */
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.intro {
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+  padding: 50px 20px;
+}
+.intro-text {
+  background-color: #000; /* Black background for the card */
+  color: #fff; /* White text */
+  padding: 20px;
+  border-radius: 10px; /* Rounded corners for the card */
+  border: 2px solid #fff; /* White border around the card */
+  transition: all 0.3s ease-in-out; /* Smooth transition for hover effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for card effect */
+  text-align: center;
+  max-width: 700px; /* Limit the width of the text */
+}
+
+.intro-text:hover {
+  background-color: rgb(51, 107, 51); /* Red background on hover */
+  color: #000; /* Black text on hover */
+  border: 2px solid #000; /* Dark border on hover */
+}
+
+
+.container2 {
+  width: 90%; /* Slightly wider for better spacing */
+  margin: auto;
+  display: flex; /* Flexbox for horizontal alignment */
+  align-items: center; /* Vertically center elements */
+  justify-content: space-between; /* Add equal space between items */
+  gap: 20px; /* Space between items */
+  flex-wrap: wrap; /* Ensure responsive wrapping on smaller screens */
+}
+
+.Name {
+  flex: 1; /* Allow flexible width */
+  text-align: left; /* Align text to the left */
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.intro-img {
+  flex: 1; /* Allow flexible width */
+  display: flex;
+  justify-content: center; /* Center the image horizontally */
+}
+
+.intro-img img {
+  border-radius: 10px; /* Remove rounded corners */
+  width: 300px; /* Set a consistent width */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure the image fits nicely */
+  box-shadow: none; /* Remove any default shadow or effects */
+  background: transparent; /* No background to blend into the page */
+}
+
+/* .intro-img img {
+  border-radius: 10px; /* Slightly rounded corners */
+  /* width: 200px; /* Adjust the width */
+  /* height: 300px; Set height for rectangular shape */
+  /* border: 3px solid #fff; White border */
+  /* object-fit: cover; Ensure the image fits nicely */ 
+/* }
+ */
+
+.intro-text {
+  flex: 2; /* Occupy more space for the text */
+  text-align: left; /* Align text to the left */
+  font-size: 1.2rem;
+  line-height: 1.8;
+  max-width: 700px; /* Limit the text width */
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color:rgb(51, 107, 51); /* Accent color for button */
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  border: none;
+  border-radius: 25px; /* Rounded button */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #d9534f; /* Darker shade on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container2 {
+    flex-direction: column; /* Stack elements vertically on smaller screens */
+    text-align: center;
+  }
+
+  .Name, .intro-text {
+    text-align: center; /* Center-align text on smaller screens */
+  }
+
+  .intro-img {
+    margin: 20px 0; /* Add spacing for better visual balance */
+  }
+}
+.services {
+  background-color: #1a1a1a; /* Dark background for the section */
+  padding: 50px 20px;
+  text-align: center; /* Center-align the section's content */
+}
+
+.services h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.services h3 {
+  font-size: 1.8rem;
+  margin-bottom: 40px;
+  color: #f76c6c; /* Accent color for subheading */
+}
+
+/* Skill Set Section */
+.skill-set {
+  display: flex;
+  justify-content: center; /* Center the skill cards horizontally */
+  gap: 30px; /* Space between the cards */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.skill {
+  background-color: rgb(51, 107, 51); /* Green background for each skill card */
+  padding: 30px;
+  border-radius: 10px; /* Rounded corners */
+  width: 250px;
+  text-align: center;
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.skill img {
+  max-width: 80px; /* Limit the size of the icons */
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.skill h4 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.skill p {
+  font-size: 1rem;
+  color: #ddd; /* Lighter color for the description text */
+}
+
+/* Hover Effect for Skills */
+.skill:hover {
+  background-color: #000; /* Change background to black on hover */
+  color: #fff; /* Keep text color white */
+}
+
+.skill:hover h4,
+.skill:hover p {
+  color: #fff; /* Ensure text remains white when hovered */
+}
+
+/* Container for Projects Section */
+.projects {
+  background-color: #000; /* Black background */
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.projects h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #f76c6c; /* Accent color for heading */
+}
+
+.project-cards {
+  display: flex;
+  flex-direction: column; /* Stack projects vertically */
+  gap: 40px; /* Space between each project card */
+  align-items: center; /* Center the cards horizontally */
+}
+
+.project {
+  background-color: rgb(51, 107, 51); /* Green background for each project card */
+  padding: 30px;
+  border-radius: 10px; /* Rounded corners */
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.project img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.project h4 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.project p {
+  font-size: 1.2rem;
+  color: #ddd; /* Lighter text color */
+}
+
+/* Hover Effect for Projects */
+.project:hover {
+  background-color:  #333; /* Change background to black on hover */
+  color: #fff; /* Keep text color white */
+}
+
+.project:hover h4,
+.project:hover p {
+  color: #fff; /* Ensure text remains white when hovered */
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+  .project-cards {
+    gap: 20px; /* Reduce gap on smaller screens */
+  }
+
+  .project {
+    width: 90%; /* Adjust width for smaller screens */
+  }
+}
+
+/* Contact Section */
+.contact {
+  background-color: #121212; /* Dark background */
+  color: #fff; /* White text */
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #f76c6c; /* Accent color */
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #000; /* Black background for form */
+  padding: 30px;
+  border-radius: 10px; /* Rounded corners for the form */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for form */
+}
+
+.contact-form .form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.contact-form label {
+  display: block;
+  font-size: 1rem;
+  color: #fff; /* White label text */
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  background-color: #333; /* Dark input field */
+  border: 1px solid #444;
+  color: #fff; /* White text in input fields */
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #f76c6c; /* Accent color border on focus */
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  background-color: rgb(51, 107, 51); /* Green button */
+  color: #fff;
+  border: none;
+  font-size: 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #000; /* Button turns black on hover */
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+  .contact-form {
+    padding: 20px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.9rem;
+  }
+}
+
+/* 
+.services, .portfolio {
+  padding: 50px 0;
+}
+
+.service-items, .portfolio-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.service-item, .portfolio-item {
+  flex: 1;
+  text-align: center;
+} */
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
