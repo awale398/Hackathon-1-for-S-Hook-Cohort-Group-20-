@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:#ccc ; 
+    text-align: center;
+
+}
+
+
+header {
+    background-color: #333;
+    color: #fff; 
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+
+#educational-background {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#educational-background h2 {
+    margin-top: 0;
+}
+
+
+#interests {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#interests h2 {
+    margin-top: 0;
+}
+
+
+#projects {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#projects h2 {
+    margin-top: 0;
+}
+
+
+.project {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+
+#contact {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#contact h2 {
+    margin-top: 0;
+}
+
+
+@media (max-width: 768px) {
+    
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+   
+}
